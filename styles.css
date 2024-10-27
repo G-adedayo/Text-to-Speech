@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #FFB6C1, #FF69B4, #FF1493, #FFC0CB); /* Floral background */
+    color: #ffffff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Maximum width */
+    display: flex; /* Enable flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align items horizontally */
+}
+
+textarea {
+    width: 100%; /* Default to full width */
+    max-width: 500px; /* Set a maximum width for larger screens */
+    padding: 10px;
+    border: 1px solid #FF69B4; /* Pink border */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    resize: none; /* Disable resizing */
+    font-size: 16px; /* Font size */
+}
+
+/* Media query to adjust textarea size on smaller screens */
+@media (max-width: 767px) {
+    textarea {
+        width: 80%; /* Set a narrower width for smaller devices */
+        height: 150px; /* Set a specific height for smaller devices */
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap buttons on smaller screens */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #FF69B4; /* Pink button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+button:hover {
+    background-color: #FF1493; /* Darker pink on hover */
+}
